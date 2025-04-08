@@ -111,7 +111,7 @@ unset($_SESSION['simpan_message']);
 
                 <div class="d-flex justify-content-center gap-3 mb-4">
                     <button type="submit" name="simpan" class="btn btn-success">Simpan</button>
-                    <a href="tampil_leads.php" class="btn btn-primary">Lihat Data Leads</a>
+                    <a href="simpan.php" class="btn btn-primary">Lihat Data Leads</a>
                     <button class="btn btn-outline-danger">Cancel</button>
                 </div>
             </form>

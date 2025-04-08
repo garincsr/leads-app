@@ -68,7 +68,7 @@ $sales_options = $db->query("SELECT * FROM sales");
                     <h5>Cari Berdasarkan Produk</h5>
                 </div>
                 <div class="card-body">
-                    <form method="GET" action="tampil_leads.php">
+                    <form method="GET" action="simpan.php">
                         <div class="row">
                             <div class="col-md-8">
                                 <select name="search_produk" class="form-select">
@@ -80,7 +80,7 @@ $sales_options = $db->query("SELECT * FROM sales");
                             </div>
                             <div class="col-md-4">
                                 <button type="submit" class="btn btn-primary">Cari</button>
-                                <a href="tampil_leads.php" class="btn btn-secondary">Reset</a>
+                                <a href="simpan.php" class="btn btn-secondary">Reset</a>
                             </div>
                         </div>
                     </form>
@@ -93,7 +93,7 @@ $sales_options = $db->query("SELECT * FROM sales");
                     <h5>Cari Berdasarkan Sales dan Bulan</h5>
                 </div>
                 <div class="card-body">
-                    <form method="GET" action="tampil_leads.php">
+                    <form method="GET" action="simpan.php">
                         <div class="row">
                             <div class="col-md-4">
                                 <select name="search_sales" class="form-select">
@@ -122,7 +122,7 @@ $sales_options = $db->query("SELECT * FROM sales");
                             </div>
                             <div class="col-md-4">
                                 <button type="submit" class="btn btn-info">Cari</button>
-                                <a href="tampil_leads.php" class="btn btn-secondary">Reset</a>
+                                <a href="simpan.php" class="btn btn-secondary">Reset</a>
                             </div>
                         </div>
                     </form>

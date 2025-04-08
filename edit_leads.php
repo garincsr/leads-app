@@ -3,7 +3,7 @@ session_start();
 include "service/database.php";
 
 if (!isset($_GET['id'])) {
-    header("Location: tampil_leads.php");
+    header("Location: simpan.php");
     exit();
 }
 
@@ -31,7 +31,7 @@ if (isset($_POST['update'])) {
 
     if ($db->query($update_query)) {
         $_SESSION['update_message'] = "Data dengan ID " . str_pad($id_leads, 3, '0', STR_PAD_LEFT) . " berhasil diupdate!";
-        header("Location: tampil_leads.php");
+        header("Location: simpan.php");
         exit();
     } else {
         $error = "Gagal update data: " . $db->error;
@@ -107,7 +107,7 @@ $sales_options = $db->query("SELECT * FROM sales");
                 </div>
                 
                 <div class="d-flex justify-content-between">
-                    <a href="tampil_leads.php" class="btn btn-secondary">Kembali</a>
+                    <a href="simpan.php" class="btn btn-secondary">Kembali</a>
                     <button type="submit" name="update" class="btn btn-primary">Update Data</button>
                 </div>
             </form>
